@@ -1,0 +1,10 @@
+/Users/doriankinoocrutcher/Documents/NEAR/New_Example_Creation/simple-nft-rust-example/contracts/nft-simple/target/wasm32-unknown-unknown/release/deps/bs58-e8df3b24b6ad2be3.rmeta: /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/lib.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/alphabet.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/decode.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/encode.rs
+
+/Users/doriankinoocrutcher/Documents/NEAR/New_Example_Creation/simple-nft-rust-example/contracts/nft-simple/target/wasm32-unknown-unknown/release/deps/libbs58-e8df3b24b6ad2be3.rlib: /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/lib.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/alphabet.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/decode.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/encode.rs
+
+/Users/doriankinoocrutcher/Documents/NEAR/New_Example_Creation/simple-nft-rust-example/contracts/nft-simple/target/wasm32-unknown-unknown/release/deps/bs58-e8df3b24b6ad2be3.d: /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/lib.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/alphabet.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/decode.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/encode.rs
+
+/Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/lib.rs:
+/Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/alphabet.rs:
+/Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/decode.rs:
+/Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/bs58-0.4.0/src/encode.rs:

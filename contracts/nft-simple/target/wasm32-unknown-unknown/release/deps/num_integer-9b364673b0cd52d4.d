@@ -1,0 +1,9 @@
+/Users/doriankinoocrutcher/Documents/NEAR/New_Example_Creation/simple-nft-rust-example/contracts/nft-simple/target/wasm32-unknown-unknown/release/deps/num_integer-9b364673b0cd52d4.rmeta: /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/lib.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/roots.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/average.rs
+
+/Users/doriankinoocrutcher/Documents/NEAR/New_Example_Creation/simple-nft-rust-example/contracts/nft-simple/target/wasm32-unknown-unknown/release/deps/libnum_integer-9b364673b0cd52d4.rlib: /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/lib.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/roots.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/average.rs
+
+/Users/doriankinoocrutcher/Documents/NEAR/New_Example_Creation/simple-nft-rust-example/contracts/nft-simple/target/wasm32-unknown-unknown/release/deps/num_integer-9b364673b0cd52d4.d: /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/lib.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/roots.rs /Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/average.rs
+
+/Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/lib.rs:
+/Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/roots.rs:
+/Users/doriankinoocrutcher/.cargo/registry/src/github.com-1ecc6299db9ec823/num-integer-0.1.44/src/average.rs:
