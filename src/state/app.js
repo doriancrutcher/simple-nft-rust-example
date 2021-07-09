@@ -22,6 +22,7 @@ const initialState = {
 let snackTimeout;
 
 export const { appStore, AppProvider } = State(initialState, "app");
+console.log(appStore);
 
 export const onAppMount =
   () =>

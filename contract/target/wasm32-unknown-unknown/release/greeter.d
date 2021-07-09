@@ -1,0 +1,1 @@
+/Users/doriankinoocrutcher/Documents/NEAR/New_Example_Creation/simple-nft-rust-example/contract/target/wasm32-unknown-unknown/release/greeter.wasm: /Users/doriankinoocrutcher/Documents/NEAR/New_Example_Creation/simple-nft-rust-example/contract/src/lib.rs

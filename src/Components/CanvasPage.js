@@ -14,6 +14,8 @@ import CanvasDraw from "react-canvas-draw";
 import DrawBack from "../assets/nearcat 1.svg";
 import { HuePicker } from "react-color";
 
+import { handleMint } from "../state/actions";
+
 import { compressToBase64, decompressFromBase64 } from "lz-string";
 
 const styles = {
@@ -68,13 +70,51 @@ const CanvasPage = (props) => {
   };
 
   const sendToBlockChain = async () => {
-    const now = Date.now();
-    const metaData = {
-      media: localStorage.getItem("drawingData")
+    if (localStorage.getItem("drawingData")) {
+      console.log("drawing data check complete");
+    } else if (canvasRef.current.getSaveData()) {
+      console.log("drawing data check complete");
+    } else {
+      return alert("draw something");
+    }
+
+    if (localStorage.getItem("drawingName")) {
+      console.log("drawing name check complete");
+    } else if (nearKatName.current.value) {
+      console.log("drawing name check complete");
+    } else {
+      return alert("name your Nearkat!");
+    }
+
+    localStorage.getItem("drawingData")
+      ? localStorage.getItem("drawingData")
+      : canvasRef.current.getSaveData();
+
+    console.log(canvasRef.current.getSaveData());
+
+    await window.contract.add_token({
+      user: window.accountId,
+      drawing_data: localStorage.getItem("drawingData")
         ? localStorage.getItem("drawingData")
-        : canvasRef.current.getSaveData(),
-      issued_at: now.toString(),
-    };
+        : compressToBase64(canvasRef.current.getSaveData()),
+      drawing_name: localStorage.getItem("drawingName")
+        ? localStorage.getItem("drawingName")
+        : nearKatName.current.value,
+    });
+    // handleMint(account, royalties, media, validMedia);
+    // handleMint(
+    //   window.connectedWallet,
+    //   {},
+    //   "https://giphy.com/gifs/swerk-h2ZVjT3kt193cxnwm1",
+    //   true
+    // );
+    // const now = Date.now();
+    // const metaData = {
+    //   media: localStorage.getItem("drawingData")
+    //     ? localStorage.getItem("drawingData")
+    //     : canvasRef.current.getSaveData(),
+    //   issued_at: now.toString(),
+    // };
   };
 
   useEffect(() => {

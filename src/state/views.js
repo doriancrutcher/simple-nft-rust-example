@@ -27,8 +27,8 @@ export const getMarketStoragePaid =
 
 export const loadItems =
   (account) =>
-  async ({ update, getState }) => {
-    const { contractAccount } = getState();
+  async ({ update }) => {
+    const contractAccount = window.account;
 
     /// user tokens
     let tokens = [];

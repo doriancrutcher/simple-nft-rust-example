@@ -1,5 +1,5 @@
 import "regenerator-runtime/runtime";
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { login, logout } from "./utils";
 import "./global.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,13 +7,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import getConfig from "/config";
 const { networkId } = getConfig(process.env.NODE_ENV || "development");
 
+// NPM Tools
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
 import { Nav, Navbar, Container, NavDropdown, Row } from "react-bootstrap";
 
+//Assets
 import NEARIcon from "./assets/near_icon 1.svg";
-
 import SimpleSign from "./assets/simple.svg";
+
+// Local Tools
+import { appStore, onAppMount } from "./state/app";
+import { loadItems } from "./state/views";
 
 //Components
 import LoginPage from "./Components/LoginPage";
@@ -22,6 +26,16 @@ import CanvasPage from "./Components/CanvasPage";
 // import CanvasPage from "./Components/CanvasPage.js";
 
 export default function App() {
+  // State variables
+
+  useEffect(() => {
+    const getItems = async () => {
+      console.log(await loadItems(window.account));
+    };
+
+    getItems();
+  }, []);
+
   return (
     <Router>
       <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>

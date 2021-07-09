@@ -4,6 +4,9 @@ import {
   keyStores,
   WalletConnection,
   Account,
+  ConnectedWalletAccount,
+  Near,
+  Connection,
 } from "near-api-js";
 import getConfig from "./config";
 
@@ -26,25 +29,31 @@ export async function initContract() {
   // Getting the Account ID. If still unauthorized, it's just empty string
   window.accountId = window.walletConnection.getAccountId();
   window.account = new Account(near, window.accountId);
+  console.log(
+    await near.connection.signer.getPublicKey(
+      window.accountId,
+      nearConfig.networkId
+    )
+  );
+
+  window.connectedWallet = new ConnectedWalletAccount(
+    window.walletConnection,
+    near.connection,
+    window.accountId
+  );
   // Initializing our contract APIs by contract name and configuration
   window.contract = await new Contract(
     window.walletConnection.account(),
     nearConfig.contractName,
     {
       // View methods are read only. They don't modify the state, but usually return some value.
-      viewMethods: ["get_guest", "get_token_ids", "nft_token", "get_sale"],
-      changeMethods: [
-        "new",
-        "nft_mint",
-        "nft_transfer",
-        "add_guest",
-        "remove_guest",
-        "nft_approve_account_id",
-        "nft_mint_guest",
-        "nft_add_sale_guest",
-        "nft_remove_sale_guest",
-        "upgrade_guest",
+      viewMethods: [
+        "get_token",
+        "get_total_number_of_tokens",
+        "get_greeting",
+        "get_user_token_array",
       ],
+      changeMethods: ["add_token", "set_greeting"],
     }
   );
 }
